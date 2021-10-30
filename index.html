@@ -4,33 +4,68 @@
 <head>
     <meta charset="utf-8">
     <title>啊呀</title>
+    <style>
+        @font-face {
+            font-family: 'PixelFont18';
+            src: url('font18.TTF');
+        }
+
+        @font-face {
+            font-family: 'PixelFont14';
+            src: url('font14.TTF');
+        }
+
+        p {
+            font-family: PixelFont14,serif;
+            font-size: 5vw;
+            line-height: 6vw;
+            margin: 2vw;
+        }
+
+        span {
+            font-family: PixelFont14,serif;
+            font-size: 5vw;
+        }
+    </style>
 </head>
 <body style="padding: 0;margin: 0;height: 100vh;overflow: hidden">
     <div style="width:100%; margin: auto; padding: 34% 0 0 0;background-image: url(background.png);background-size: 100%;height: 100vh;">
         <div style="position: fixed;top: 10px;right: 10px">
             <a href="https://itxia.club">
-                <img src="hb.png" style="height: 10vw;" alt="">
+                <img src="hb.png" style="height: 10vw;" alt="home">
             </a>
         </div>
-        <div style="margin: 0 10px;position: relative;opacity: 0.85;">
-            <div>
+        <div style="margin: 0 10px;position: relative;">
+            <div style="position: absolute;z-index: 10;width: 100%;height: 27vw">
+                <div style="display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;">
+                    <p style="color: #e00a0a;margin: 1vw;">停下来!</p>
+                    <p style="margin: 1vw;">绝对不要这样!</p>
+                </div>
+            </div>
+            <div style="opacity: 0.85;">
                 <img src="div1.png" style="position: relative;width: 100%;display: block;"  alt=""/>
                 <img src="div2.png" style="position: relative;width: 100%;height: 40vh;display: block;"  alt=""/>
                 <img src="div3.png" style="position: relative;width: 100%;"  alt=""/>
+                <div style="margin: 0 4vw;position: absolute;z-index: 10;top: 31vw;
+                word-break: break-all;word-wrap: break-word;height: calc(100% - 62vw);overflow: auto">
+                    <p>电脑进水是怎么回事呢？相信大家都很好奇电脑进水是怎么回事，接下来就让小编带大家了解一下电脑进水是怎么回事吧！</p>
+                    <p>相信大家都很担心在生活中遇到电脑进水的情况，小编也有这样的顾虑。那么我们在遇到电脑进水的情况时应该怎么办呢？其实小编也不是很清楚。</p>
+                    <p>总之，关于电脑进水的情况就是这样啦，关注小编，获取更多电脑资讯哦！</p>
+                </div>
             </div>
             <div style="bottom: 30px; width: 100%; display: flex;justify-content: space-between;">
                 <a href="https://table.nju.edu.cn/dtable/forms/175053ee-02fe-41b1-8dff-5e3adb6cc2e3/" style="width: 24%;">
-                    <img src="r_b.png" style="width: 100%;"  alt=""/>
+                    <img src="r_b.png" style="width: 100%;"  alt="submit application form"/>
                 </a>
                 <a href="https://mp.weixin.qq.com/s/bJK7L-WueCCHqI8k31wK7A" style="width: 24%">
-                    <img src="g_b.png" style="width: 100%" alt=""/>
+                    <img src="g_b.png" style="width: 100%" alt="recruit information"/>
                 </a>
                 <a href="https://nju.itxia.cn" style="width: 24%">
-                    <img src="y_b.png" style="width: 100%" alt=""/>
+                    <img src="y_b.png" style="width: 100%" alt="make appointments"/>
                 </a>
 
-                <a href="https://itxia.club/introduction" style="width: 24%">
-                    <img src="b_b.png" style="width: 100%" alt=""/>
+                <a href="https://www.yuque.com/itxia/intro_for_public/brief_history" style="width: 24%">
+                    <img src="b_b.png" style="width: 100%" alt="about us"/>
                 </a>
         </div>
     </div>
