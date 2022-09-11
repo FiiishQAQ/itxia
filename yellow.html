@@ -2,125 +2,133 @@
 <html lang="zh">
 
 <head>
-    <meta charset="utf-8">
-    <title>有钱任性</title>
-    <link rel="shortcut icon" href="logo.ico">
-    <style>
-        @font-face {
-            font-family: 'PixelFont18';
-            src: url('font18.TTF');
-        }
+  <meta charset="utf-8">
+  <title>有钱任性</title>
+  <link rel="shortcut icon" href="logo.ico">
+  <style>
+    @font-face {
+      font-family: 'PixelFont18';
+      src: url('font18.TTF');
+    }
 
-        @font-face {
-            font-family: 'PixelFont14';
-            src: url('font14.TTF');
-        }
+    @font-face {
+      font-family: 'PixelFont14';
+      src: url('font14.TTF');
+    }
 
-        p {
-            font-family: PixelFont14,serif;
-            font-size: 5vw;
-            line-height: 6vw;
-            margin: 2vw;
-        }
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
 
-        span {
-            font-family: PixelFont14,serif;
-            font-size: 5vw;
-        }
+    p {
+      font-family: PixelFont14,serif;
+      font-size: 5vw;
+      line-height: 6vw;
+      margin: 0 2vw 1em;
+    }
 
-        .button:active {
-            -webkit-filter: brightness(70%);
-            filter: brightness(70%);
-        }
+    span {
+      font-family: PixelFont14,serif;
+      font-size: 5vw;
+    }
 
-        a {
-            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            -webkit-user-select: none;
-            -moz-user-focus: ignore;
-            -moz-user-select: none;
-        }
+    .button:active {
+      -webkit-filter: brightness(70%);
+      filter: brightness(70%);
+    }
 
-        #achievement {
-            transition-duration: 1s;
-        }
-    </style>
+    a {
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      -webkit-user-select: none;
+      -moz-user-focus: ignore;
+      -moz-user-select: none;
+    }
+
+    #achievement {
+      transition-duration: 1s;
+    }
+  </style>
 </head>
-<body style="padding: 0;margin: 0;height: 100vh;overflow: hidden">
-    <audio
-            src="getAchievement.mp3"
-            autoplay controls="controls" hidden="hidden" >
-        Your browser does not support the <code>audio</code> element.
-    </audio>
 
-    <div style="width:100%; margin: auto; padding: 34% 0 0 0;background-image: url(background.png);background-size: 100%;height: 100vh;">
+<body style="height: 10vh;overflow: hidden">
 
-        <div id="achievement" style="position: fixed;z-index: 200;width: 100%;top:-20vw">
-            <div style="display: flex;justify-content: center;align-items: center;height: 100%;">
-                <img src="achievement.png" alt="" style="width: 70vw">
-                <div style="position: absolute;display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;left: 45vw">
-                    <span style="color: #ffce00;margin: 1vw;">获得成就</span>
-                    <span style="color: #ffffff;margin: 1vw;">家财万贯</span>
-                </div>
-            </div>
-        </div>
+<audio id="bgm" src="getAchievement.mp3" hidden="hidden" >Your browser does not support the <code>audio</code> element.</audio>
 
-        <div style="position: fixed;top: 10px;right: 10px">
-            <a href="https://itxia.club">
-                <img class=button src="hb.png" style="height: 10vw;" alt="home">
-            </a>
-        </div>
-        <div style="margin: 0 10px;position: relative;">
-            <div style="position: absolute;z-index: 10;width: 100%;height: 27vw">
-                <div style="display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;">
-                    <p style="margin: 1vw;">有钱真的可以为所欲为!</p>
-                    <p style="margin: 1vw;">(建议再送我一台!)</p>
-                </div>
-            </div>
-            <div style="opacity: 0.85;">
-                <img src="div1.png" style="position: relative;width: 100%;display: block;"  alt=""/>
-                <img src="div2.png" style="position: relative;width: 100%;height: 40vh;display: block;"  alt=""/>
-                <img src="div3.png" style="position: relative;width: 100%;"  alt=""/>
-                <div style="margin: 0 4vw;position: absolute;z-index: 10;top: 31vw;
-                word-break: break-all;word-wrap: break-word;height: calc(100% - 62vw);overflow: auto;opacity: 1">
-                    <p>总的来说，如果电脑不是发生特别严重的事故，和人一样，都是有可能“抢救”回来的。就以一般的电脑进水为例，只要我们第一时间采取正确的措施并寻求专业维修，很大程度上是可以避免事态恶化、“拯救”我们的电脑的。</p>
-                    <p>所以，无论从经济还是补救操作的可能性角度，换电脑都不应该是首选。当然，如果你的经费充足且本就有意换新，可以无视上述建议。(可恶</p>
-                    <p>在电脑进水后，可以参考以下步骤处理: </p>
-                    <p>首先请立即电脑关机(在有重要工作时可先保存文件)并移除电池(如果可能)和电源、取下外接或抽换式的模块零件(如光驱、U盘、移动硬盘等)，然后将液体正确倒出并轻轻擦拭干净，接着视电脑进水情况正确摆放电脑并将机体及零件晾干(或小心正确使用吹风机吹干，请注意吹风机不要触碰电路板和芯片)。最后，请及时寻求专业帮助!</p>
-                    <a href="https://zhuanlan.zhihu.com/p/58517356"><img class="button"  src="ref.png" style="width: 100%;display: block;"  alt=""/></a>
-                    <p></p>
-                    <a href="https://sspai.com/post/44431"><img class="button"  src="ref2.png" style="width: 100%;display: block;"  alt=""/></a>
-                </div>
-            </div>
-            <div style="bottom: 30px; width: 100%; display: flex;justify-content: space-between;">
-                <a href="https://table.nju.edu.cn/dtable/forms/175053ee-02fe-41b1-8dff-5e3adb6cc2e3/" style="width: 24.7%;">
-                    <img class=button src="r_b.png" style="width: 100%;"  alt="submit application form"/>
-                </a>
-                <a href="https://mp.weixin.qq.com/s/bJK7L-WueCCHqI8k31wK7A" style="width: 24.7%">
-                    <img class=button src="g_b.png" style="width: 100%" alt="recruit information"/>
-                </a>
-                <a href="https://nju.itxia.cn" style="width: 24.7%">
-                    <img class=button src="y_b.png" style="width: 100%" alt="make appointments"/>
-                </a>
+<div id="achievement" style="position: fixed;z-index: 200;width: 100%;top:-20vw;">
+  <div style="display: flex;justify-content: center;align-items: center;height: 100%;">
+    <img src="achievement.png" alt="" style="width: 70vw">
+    <div style="position: absolute;display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;left: 40vw">
+      <span style="color: #ffce00;margin: 1vw;">获得成就</span>
+      <span style="color: #ffffff;margin: 1vw;">家财万贯</span>
+    </div>
+  </div>
+</div>
 
-                <a href="https://www.yuque.com/itxia/intro_for_public/brief_history" style="width: 24.7%">
-                    <img class=button src="b_b.png" style="width: 100%" alt="about us"/>
-                </a>
-            </div>
-        </div>
+<div style="width:100%; margin: auto; padding: 34% 0 12px 0;background-image: url(background.png);background-size: 100%;height: 100%;">
+
+  <div style="position: fixed;top: 12px;right: 12px;z-index: 100">
+    <a href="https://itxia.club">
+      <img class=button src="hb.png" style="height: 10vw;" alt="home">
+    </a>
+  </div>
+
+  <div style="margin: 0 12px;height: 100%; position: relative; display: flex; flex-direction: column">
+
+    <div style="position: absolute;z-index: 10;width: 100%;height: 27vw; flex: 0 0 27vw">
+      <div style="display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;">
+        <p style="margin: 1vw;">有钱真的可以为所欲为!</p>
+        <p style="margin: 1vw;">(建议再送我一台!)</p>
+      </div>
     </div>
 
-    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1280506811&web_id=1280506811"></script> <!--CNZZ流量统计JS-->
+    <div style="opacity: 0.85; flex: 1; height: 10vh;display: flex; flex-direction: column">
+      <img src="div1.png" style="position: relative;width: 100%;display: block;"  alt=""/>
+      <div style="padding: 0 4vw;background: url(div2.png);background-size: 100% auto;overflow-y: scroll;opacity: 1">
+        <p>总的来说，如果电脑不是发生特别严重的事故，和人一样，都是有可能“抢救”回来的。就以一般的电脑进水为例，只要我们第一时间采取正确的措施并寻求专业维修，很大程度上是可以避免事态恶化、“拯救”我们的电脑的。</p>
+        <p>所以，无论从经济还是补救操作的可能性角度，换电脑都不应该是首选。当然，如果你的经费充足且本就有意换新，可以无视上述建议。(可恶</p>
+        <p>在电脑进水后，可以参考以下步骤处理: </p>
+        <p>首先请立即电脑关机(在有重要工作时可先保存文件)并移除电池(如果可能)和电源、取下外接或抽换式的模块零件(如光驱、U盘、移动硬盘等)，然后将液体正确倒出并轻轻擦拭干净，接着视电脑进水情况正确摆放电脑并将机体及零件晾干(或小心正确使用吹风机吹干，请注意吹风机不要触碰电路板和芯片)。最后，请及时寻求专业帮助!</p>
+        <a href="https://zhuanlan.zhihu.com/p/58517356"><img class="button"  src="ref.png" style="width: 100%;display: block;"  alt=""/></a>
+        <p></p>
+        <a href="https://sspai.com/post/44431"><img class="button"  src="ref2.png" style="width: 100%;display: block;"  alt=""/></a>
+      </div>
+      <img src="div3.png" style="position: relative;width: 100%;"  alt=""/>
+    </div>
+
+    <div style="margin: 8px 0 30px; flex: 0 0 auto; width: 100%; display: grid; column-gap: 8px; grid-template-columns: 1fr 1fr 1fr 1fr">
+      <a href="https://table.nju.edu.cn/dtable/forms/ab0b01d4-c8c4-4151-b8d7-2ff3438cbde7/">
+        <img class=button src="r_b.png" style="width: 100%;"  alt="submit application form"/>
+      </a>
+      <a href="https://mp.weixin.qq.com/s/Aoy3HEq0lriuX9LwC5aKKQ">
+        <img class=button src="g_b.png" style="width: 100%" alt="recruit information"/>
+      </a>
+      <a href="https://nju.itxia.cn">
+        <img class=button src="y_b.png" style="width: 100%" alt="make appointments"/>
+      </a>
+
+      <a href="https://www.yuque.com/itxia/intro_for_public/brief_history">
+        <img class=button src="b_b.png" style="width: 100%" alt="about us"/>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1280506811&web_id=1280506811"></script> <!--CNZZ流量统计JS-->
 </body>
 
 <script>
-    achieve = document.getElementById("achievement");
-    achieveOut = setInterval(function(){
-                                achieve.style.top = "1vw";
-                                clearInterval(achieveOut);
-                            },0);
-    achieveBack = setInterval(function(){
-        achieve.style.top = "-20vw";
-        clearInterval(achieveBack);
-    },4000);
+  window.addEventListener("resize", ()=>{
+    document.body.style.height = window.innerHeight + "px";
+  })
+  document.body.style.height = window.innerHeight + "px";
+  achieve = document.getElementById("achievement");
+  document.getElementById("bgm").play();
+  achieve.style.top = "1vw";
+  setTimeout(function(){
+    achieve.style.top = "-20vw";
+  },4000);
 </script>
 </html>
